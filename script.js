@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const reportBtn = document.querySelector('.report-btn');
     
-    // Zoom functionality (using basic CSS scaling)
     let scale = 1;
     const zoomInView = document.getElementById('zoomed-in-view');
     
@@ -17,6 +16,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     reportBtn.addEventListener('click', () => {
         alert('Generating report...');
-        // Logic to generate report (e.g., downloading a PDF or opening a modal)
     });
 });
