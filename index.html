@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WSI Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="back-btn">&larr;</button>
+            <div class="timestamp">Mon Oct 07 2024 16:39:07</div>
+        </header>
+
+        <!-- Data Panel -->
+        <section class="data-panel">
+            <h3>RBC</h3>
+            <table>
+                <tr><th>Type</th><th>Count</th><th>Percentage</th></tr>
+                <tr><td>Angled Cells</td><td>222</td><td>67%</td></tr>
+                <tr><td>Borderline Ovalocytes</td><td>50</td><td>20%</td></tr>
+                <tr><td>Burr Cells</td><td>87</td><td>34%</td></tr>
+                <!-- Add other rows as needed -->
+            </table>
+            <h3>WBC</h3>
+            <table>
+                <tr><th>Type</th><th>Count</th><th>Percentage</th></tr>
+                <tr><td>Basophil</td><td>222</td><td>67%</td></tr>
+                <tr><td>Eosinophil</td><td>50</td><td>20%</td></tr>
+                <tr><td>Lymphocyte</td><td>87</td><td>34%</td></tr>
+                <!-- Add other rows as needed -->
+            </table>
+            <h3>Platelets</h3>
+            <table>
+                <tr><td>Count</td><td>222</td></tr>
+                <tr><td>Percentage</td><td>67%</td></tr>
+            </table>
+        </section>
+
+        <!-- Zoomed-in WSI View -->
+        <section class="wsi-view">
+            <img src="wsi_image.png" id="zoomed-in-view" alt="WSI Zoomed IN">
+        </section>
+
+        <!-- Zoomed-out WSI Hub View -->
+        <section class="wsi-hub-view">
+            <div class="hub">
+                <span>WSI Zoomed-out View (Hub)</span>
+                <table>
+                    <tr><th>Patient ID</th><td>12345</td></tr>
+                    <tr><th>Blood</th><td>Sample</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Report Button -->
+        <button class="report-btn">Report</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
